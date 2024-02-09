@@ -34,10 +34,6 @@ return {
             },
           },
           integrations = {
-            telescope = {
-              enabled = true,
-              style = "nvchad",
-            },
             dropbar = {
               enabled = true,
               color_mode = true,
@@ -52,10 +48,6 @@ return {
           },
         },
         integrations = {
-          telescope = {
-            enabled = true,
-            style = "nvchad",
-          },
           dropbar = {
             enabled = true,
             color_mode = true,

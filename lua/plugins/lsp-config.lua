@@ -34,6 +34,7 @@ return {
         end,
         capabilities = capabilities,
       })
+      vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", {})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
