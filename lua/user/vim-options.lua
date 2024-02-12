@@ -76,3 +76,4 @@ vim.opt.foldenable = true
 
 -- Always keep 8 lines above/below cursor unless at start/end of file
 vim.opt.scrolloff = 8
+

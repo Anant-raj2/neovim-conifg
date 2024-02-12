@@ -13,6 +13,9 @@ nnoremap("<leader>'", "<C-^>", { desc = "Switch to last buffer" })
 -- Save with leader key
 nnoremap("<leader>w", "<cmd>w<cr>", { silent = false })
 
+-- Save all with leader key
+nnoremap("<leader>ww", "<cmd>wa<cr>", { silent = false })
+
 -- Quit with leader key
 nnoremap("<leader>q", "<cmd>q<cr>", { silent = false })
 
@@ -38,11 +41,11 @@ nnoremap("<leader>no", "<cmd>noh<cr>")
 inoremap("<C-c>", "<esc>", { silent = false })
 
 -- Harpoon Keymaps
-nnoremap("<leader>ha", ":lua require('harpoon.mark').add_file()<cr>", {silent = false})
-nnoremap("<leader>ho", ":lua require('harpoon.ui').toggle_quick_menu()<cr>", {silent = false})
+nnoremap("<leader>ha", ":lua require('harpoon.mark').add_file()<cr>", {silent = true})
+nnoremap("<leader>ho", ":lua require('harpoon.ui').toggle_quick_menu()<cr>", {silent = true})
 -- nnoremap("<leader>hr", ":lua require('harpoon.mark').remove_file()<cr>", {silent = false})
-nnoremap("<leader>1", ":lua require('harpoon.ui').nav_file(1)<cr>", {silent = false})
-nnoremap("<leader>2", ":lua require('harpoon.ui').nav_file(2)<cr>", {silent = false})
-nnoremap("<leader>3", ":lua require('harpoon.ui').nav_file(3)<cr>", {silent = false})
-nnoremap("<leader>4", ":lua require('harpoon.ui').nav_file(4)<cr>", {silent = false})
-nnoremap("<leader>5", ":lua require('harpoon.ui').nav_file(5)<cr>", {silent = false})
+nnoremap("<leader>1", ":lua require('harpoon.ui').nav_file(1)<cr>", {silent = true})
+nnoremap("<leader>2", ":lua require('harpoon.ui').nav_file(2)<cr>", {silent = true})
+nnoremap("<leader>3", ":lua require('harpoon.ui').nav_file(3)<cr>", {silent = true})
+nnoremap("<leader>4", ":lua require('harpoon.ui').nav_file(4)<cr>", {silent = true})
+nnoremap("<leader>5", ":lua require('harpoon.ui').nav_file(5)<cr>", {silent = true})
