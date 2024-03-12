@@ -1,12 +1,10 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    -- delay update diagnostics
-    update_in_insert = true,
-  }
-)
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+	-- delay update diagnostics
+	update_in_insert = true,
+})
 -- Enable relative line numbers
 vim.opt.nu = true
 vim.opt.rnu = true
@@ -25,7 +23,7 @@ vim.opt.breakindent = true
 
 -- Enable incremental searching
 vim.opt.incsearch = true
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
 
 -- Disable text wrap
 vim.opt.wrap = false
@@ -60,9 +58,6 @@ vim.opt.termguicolors = true
 -- Enable the sign column to prevent the screen from jumping
 vim.opt.signcolumn = "yes"
 
--- Enable access to System Clipboard
-vim.opt.clipboard = "unnamed,unnamedplus"
-
 -- Enable cursor line highlight
 vim.opt.cursorline = true
 
@@ -77,3 +72,7 @@ vim.opt.foldenable = true
 -- Always keep 8 lines above/below cursor unless at start/end of file
 vim.opt.scrolloff = 8
 
+vim.opt.clipboard = "unnamedplus"
+
+-- FAT CURSORRRR
+-- vim.opt.guicursor = ""
