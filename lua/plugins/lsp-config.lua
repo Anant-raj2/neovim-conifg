@@ -1,7 +1,7 @@
 return {
-	{
-		"github/copilot.vim",
-	},
+	-- {
+	-- 	"github/copilot.vim",
+	-- },
 	{
 		"williamboman/mason.nvim",
 		config = function()

@@ -50,7 +50,7 @@ nnoremap("<leader>w", ":Rex<CR>", { silent = true })
 -- Usage Keymaps
 
 --Creata a new line below or after the current line
-vim.keymap.set("n", "<CR>", "m`o<Esc>``")
+vim.keymap.set("n", "<CR>", "m`o<Esc>``j")
 vim.keymap.set("n", "<S-CR>", "m`O<Esc>``")
 
 -- Binds to delete/change/replace without yanking.

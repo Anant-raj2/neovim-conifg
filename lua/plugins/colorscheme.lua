@@ -57,33 +57,82 @@ return {
 	--     vim.cmd.colorscheme("catppuccin")
 	--   end,
 	-- },
+	-- {
+	-- 	"sainnhe/sonokai",
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.g.sonokai_transparent_background = "1"
+	-- 		vim.g.sonokai_enable_italic = "1"
+	-- 		vim.g.sonokai_style = "andromeda"
+	-- 		vim.cmd.colorscheme("sonokai")
+	-- 	end,
+	-- },
 	{
-		"sainnhe/sonokai",
-		priority = 1000,
+		"rose-pine/neovim",
+		name = "rose-pine",
 		config = function()
-			vim.g.sonokai_transparent_background = "1"
-			vim.g.sonokai_enable_italic = "1"
-			vim.g.sonokai_style = "andromeda"
-			vim.cmd.colorscheme("sonokai")
+			require("rose-pine").setup({
+				variant = "auto",
+				dark_variant = "main",
+				dim_inactive_windows = false,
+				extend_background_behind_borders = true,
+
+				enable = {
+					terminal = true,
+					legacy_highlights = true,
+					migrations = true,
+				},
+
+				styles = {
+					bold = true,
+					italic = true,
+					transparency = true,
+				},
+
+				groups = {
+					border = "muted",
+					link = "iris",
+					panel = "surface",
+
+					error = "love",
+					hint = "iris",
+					info = "foam",
+					note = "pine",
+					todo = "rose",
+					warn = "gold",
+
+					git_add = "foam",
+					git_change = "rose",
+					git_delete = "love",
+					git_dirty = "rose",
+					git_ignore = "muted",
+					git_merge = "iris",
+					git_rename = "pine",
+					git_stage = "iris",
+					git_text = "rose",
+					git_untracked = "subtle",
+
+					h1 = "iris",
+					h2 = "foam",
+					h3 = "rose",
+					h4 = "gold",
+					h5 = "pine",
+					h6 = "foam",
+				},
+
+				highlight_groups = {},
+			})
+			vim.cmd("colorscheme rose-pine")
 		end,
 	},
 	-- {
-	--   "craftzdog/solarized-osaka.nvim",
-	--   lazy = true,
-	--   priority = 1000,
-	--   opts = function()
-	--     return {
-	--       transparent = true,
-	--     }
-	--   end,
-	-- },
-	-- {
-	--   "rose-pine/neovim",
-	--   name = "rose-pine",
-	--   config = function()
-	--     vim.cmd.colorscheme("rose-pine")
-	--     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	--     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-	--   end,
+	-- 	"ellisonleao/gruvbox.nvim",
+	-- 	config = function()
+	-- 		vim.g.gruvbox_contrast_dark = "hard"
+	-- 		vim.g.gruvbox_italic = 1
+	-- 		vim.cmd.colorscheme("gruvbox")
+	-- 		vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	-- 		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+	-- 	end,
 	-- },
 }

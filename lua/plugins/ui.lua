@@ -23,6 +23,10 @@ return {
 	},
 
 	{
+		"nvim-tree/nvim-web-devicons",
+	},
+
+	{
 		"folke/zen-mode.nvim",
 		cmd = "ZenMode",
 		opts = {
